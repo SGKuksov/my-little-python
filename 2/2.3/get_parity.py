@@ -1,4 +1,20 @@
+'''
+проверяющую целое число на четность. 
+'''
+
+
 def get_parity(num):
+    '''
+    >>> get_parity(2)
+    True
+    >>> get_parity(1)
+    False
+    '''
+
+    if not num.isdigit():
+        return 'Ошибка! Введите число'
+
+    num = int(num)
 
     if num % 2 != 0:
         print(False)
@@ -7,9 +23,6 @@ def get_parity(num):
         print(True)
         return True
 
-
-get_parity(2)
-get_parity(1)
 
 if __name__ == "__main__":
     import doctest

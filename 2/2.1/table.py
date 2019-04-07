@@ -4,10 +4,12 @@
 определяет его название.
 '''
 
+
 def table():
     from random import randint
 
-    num = input('Введите атомный номер элемента или 0, чтобы завершить программу: ')
+    num = input(
+        'Введите атомный номер элемента или 0, чтобы завершить программу: ')
 
     if len(num) and num.isdigit():
         elem = ''
@@ -28,9 +30,10 @@ def table():
             r = randint(0, 3)
             table_data[r]
 
-            print(f'Такого номера нет. Введите другой номер, например {table_data[r]} или 0, чтобы завершить программу')
+            print(
+                f'Такого номера нет. Введите другой номер, например {table_data[r]} или 0, чтобы завершить программу')
             return table()
-    
+
         return print(f'Вы ввели номер {num}. Это атомный номер элемента {elem}')
 
     else:
@@ -41,4 +44,3 @@ def table():
 if __name__ == "__main__":
     import doctest
     doctest.testmod()
-
