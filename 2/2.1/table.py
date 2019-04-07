@@ -5,8 +5,6 @@
 '''
 
 def table():
-    #  
-
     from random import randint
 
     num = input('Введите атомный номер элемента или 0, чтобы завершить программу: ')
