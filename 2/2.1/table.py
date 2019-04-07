@@ -38,8 +38,6 @@ def table():
         return table()
 
 
-# table()
-
 if __name__ == "__main__":
     import doctest
     doctest.testmod()
