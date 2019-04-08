@@ -6,8 +6,6 @@
 
 
 def table():
-    #
-
     from random import randint
 
     num = input(
@@ -42,8 +40,6 @@ def table():
         print('Введите атомный номер элемента (введите 0, чтобы завершить программу): ')
         return table()
 
-
-# table()
 
 if __name__ == "__main__":
     import doctest
