@@ -43,3 +43,7 @@ inp_code = input('Введите код города: ')
 inp_time = input('Введите длительность переговоров: ')
 
 call_tel(inp_code, inp_time)
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
